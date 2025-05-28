@@ -12,10 +12,15 @@ h1{
     text-align: center;
     padding-top: 2rem;
 
-    &__gif{
+    &__main{
+        margin-top: 3rem;
+    }
+
+    &__pokedex{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        max-width: 1200px;
     }
 
     &--list{
@@ -140,4 +145,44 @@ h2 {
     & i{
     margin-right: 1rem;
 }
+}
+
+
+.pokemon{
+    &__single{
+        padding: 2rem 1rem;
+        background-color: rgba(255, 255, 255, 0.87);
+        box-shadow: 5px 5px 1px hsla(263, 34%, 74%, 0.3);
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+    }
+
+
+    &__name{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__types{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    &__type{
+        background-color: #ceb8ba;
+        border-radius: 25px;
+        padding: .3rem .5rem;
+        letter-spacing: 1px;
+    }
+}
+
+.subtitle{
+    font-weight: 500;
+    font-size: 18px;
 }
